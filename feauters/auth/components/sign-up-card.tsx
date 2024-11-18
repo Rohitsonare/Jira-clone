@@ -4,12 +4,12 @@ import {FaGithub} from "react-icons/fa";
 
 
 import { DottedSeparator } from "@/components/dotted-separator";
-import { 
+import {                        
     Card,
      CardContent,
       CardDescription,
       CardHeader,
-       CardTitle } from "@/components/ui/card"
+       CardTitle} from "@/components/ui/card"
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
@@ -24,9 +24,9 @@ import { Button } from "@/components/ui/button";
                 <CardDescription>
                     By signing up, you agree to out {""}
                 </CardDescription>
-                <link href="/privacy">
+                <Link href="/privacy">
                 <span className = "text-blue-700">Privacy Policy</span>
-                </link>
+                </Link>
             </CardHeader>
             <div className="px-7 ">
                 < DottedSeparator />
