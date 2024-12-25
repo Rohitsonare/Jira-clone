@@ -23,16 +23,29 @@ import { Button } from "@/components/ui/button";
                 </CardTitle>
                 <CardDescription>
                     By signing up, you agree to out {""}
-                </CardDescription>
-                <Link href="/privacy">
-                <span className = "text-blue-700">Privacy Policy</span>
+                <Link href="/Privacy">
+                <span className = "text-blue-800 ">Privacy Policy</span>
+                </Link>{""} and {""}
+                <Link href="/terms">
+                <span className = "text-blue-700">Terms of service</span>
                 </Link>
-            </CardHeader>
+                </CardDescription>
+              </CardHeader>
             <div className="px-7 ">
                 < DottedSeparator />
             </div>
             <CardContent className="p-7">
                 <form className="space-y-4">
+                <Input 
+                    required
+                    type="First name "
+                    value={""}
+                    onChange={() => {}}
+                    placeholder="First name"
+                    disabled={false}
+                    min = {8}
+                    max = {256}
+                    />
                     <Input 
                     required
                     type="email"
@@ -51,6 +64,7 @@ import { Button } from "@/components/ui/button";
                     min = {8}
                     max = {256}
                     />
+                    
                     <Button disabled = {false} size = "lg" className="w-full">
                         Login
                     </Button>
