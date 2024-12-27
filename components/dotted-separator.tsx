@@ -20,7 +20,7 @@ export const DottedSeparator = ({
 
 
 }: DottedSeparatorprops) => {
- const isHorizontal = direction == "horizontal";
+ const isHorizontal = direction === "horizontal";
  return(
 
   <div className={cn(
@@ -32,12 +32,12 @@ export const DottedSeparator = ({
       style={{
         width: isHorizontal ? "100%" : height,
         height: isHorizontal ? height : "100%",
-        backgroundImage: 'radical-gradient(circle   , ${100}25%, transparent)',
+        backgroundImage: `radical-gradient(circle, ${100}25%, transparent)`,
         backgroundSize: isHorizontal
-           ? '${parseInt(dotSize) +  parseInt(gapSize)}px ${height}'
-           : '${height} ${parseInt(dotSize) + parseInt(gapSize)}px',
+           ? `${parseInt(dotSize) +  parseInt(gapSize)}px ${height}`
+           : `${height} ${parseInt(dotSize) + parseInt(gapSize)}px`,
         backgroundRepeat: isHorizontal ? "repeat-x" : "repeat-y",
-         backgroundPosition: "centet,"
+        backgroundPosition: "center", 
       }}
     
     />
